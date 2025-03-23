@@ -1,9 +1,13 @@
-const App = () => {
+import React from "react";
+import homepage from "./assets/pages/home";
+
+function App() {
   return (
-    <div className="p-4 text-center text-blue-500">
-      <h1>Tailwind CSS is working!</h1>
+    <div classname="App">
+      {/* Here we render the Homepage component*/}
+      <home />
     </div>
   );
-};
+}
 
 export default App;
