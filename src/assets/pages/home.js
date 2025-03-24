@@ -22,13 +22,16 @@ function Homepage() {
       <h2 className=" text-blue-500 text-4xl mb-10 text-center h-20">
         Upload an Image for AI recognition
       </h2>
+      <h3 className="text-blue-500 text-xl mb-10 text-center h-20">
+        See beyond the image
+      </h3>
 
       <input
         classname="file"
         type="file"
         onChange={handleImageUpload}
         className="mb-4 file:bg-blue-500 file:font file:border-blue-500 file:border-0 file:text-white p-8 file:rounded-lg file:p-2 mt-4 border-dotted border-black border-2 rounded-lg"
-        />
+      />
 
       {image && (
         <div className="image-preview mb-4">
