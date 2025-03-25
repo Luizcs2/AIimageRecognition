@@ -28,11 +28,11 @@ function Homepage() {
 
   return (
     <div className="homepage flex flex-col justify-center items-center min-h-screen p-6">
-      <h2 className=" text-white text-4xl mb-10 text-center h-20">
-        Upload an Image for AI recognition
+      <h2 className=" text-white text-5xl mb-1 text-center h-20">
+        AI Image Recognition
       </h2>
       <h3 className="text-white text-xl text-center h-20">
-        See beyond the image
+      Unlock insights from your images with cutting-edge AI technology
       </h3>
 
       {/* Drag-and-drop area */}
@@ -42,9 +42,7 @@ function Homepage() {
       >
         <input {...getInputProps()} />{" "}
         {/* Attach input props to the hidden file input */}
-        <p className="text-white">
-          Drag & Drop an image here, or click to select one
-        </p>
+        <p className="text-white">Click to select an image</p>
       </div>
 
       {/* Image preview */}
@@ -73,9 +71,6 @@ function Homepage() {
           <p>{result.description}</p>
         </div>
       )}
-
-
- 
     </div>
   );
 }
