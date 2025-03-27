@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDropzone } from "react-dropzone"; // Import useDropzone hook
 
-function Homepage() {
+function Videopage() {
   const [image, setImage] = useState(null);
   const [result, setResult] = useState(null);
 
@@ -29,50 +29,21 @@ function Homepage() {
   return (
     <div className="homepage flex flex-col justify-center items-center min-h-screen p-6">
       <h2 className=" text-white text-5xl mb-1 text-center h-20">
-        AI Image Recognition
+        AI Video Recognition
       </h2>
       <h3 className="text-white text-xl text-center h-20">
-        Unlock insights from your images with cutting-edge AI technology
+        Use our Live Video AI Detection
       </h3>
-
-      {/* Drag-and-drop area */}
-      <div
-        {...getRootProps()} // Attach drop zone props to the div
-        className="border-2 focus:outline-offset-2 hover:bg-sky-200/20 border-dotted rounded border-gray-500 p-10 text-center cursor-pointer w-full md:w-1/2"
-      >
-        <input {...getInputProps()} />{" "}
-        {/* Attach input props to the hidden file input */}
-        <p className="text-white">Click to select an image</p>
-      </div>
-
-      {/* Image preview */}
-      {image && (
-        <div className="image-preview text-blue-500 mb-4">
-          <img
-            src={image}
-            alt="Uploaded"
-            className="w-48 h-48 focus:outline-offset-2 object-cover"
-          />
-        </div>
-      )}
 
       {/* Submit button */}
       <button
         onClick={handlesubmit}
         className="bg-blue-500 focus:outline-offset-2 hover:bg-sky-500 text-white p-2 rounded mt-4 hover:scale-105"
       >
-        Submit for Recognition
+        Start Live Video
       </button>
-
-      {/* Recognition result */}
-      {result && (
-        <div className="result focus:outline-offset-2 hover:bg-sky-500 flex flex-col items-center mt-4">
-          <h3 className="font-bold">Recognition result</h3>
-          <p>{result.description}</p>
-        </div>
-      )}
     </div>
   );
 }
 
-export default Homepage;
+export default Videopage;
