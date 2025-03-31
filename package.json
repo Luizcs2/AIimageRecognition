@@ -4,21 +4,24 @@
   "private": true,
   "dependencies": {
     "16": "^0.0.2",
+    "@google-cloud/vision": "^5.1.0",
     "@material-tailwind/react": "^2.1.10",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.8.4",
-    "framer-motion": "^12.6.0",
+    "cloudinary": "^2.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "framer-motion": "^12.6.2",
     "lucide-react": "^0.483.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-dropzone": "^14.3.8",
     "react-router-dom": "^7.4.0",
-    "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4",
-    "webpack": "^5.98.0"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -48,6 +51,13 @@
     "@tailwindcss/vite": "^4.0.15",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
-    "tailwindcss": "^3.4.17"
-  }
+    "tailwindcss": "^3.4.17",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
